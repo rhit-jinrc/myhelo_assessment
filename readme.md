@@ -26,6 +26,6 @@ The code is yours to change however you like. Just remember, have fun and show o
 When you're done, simply zip up your project and email it to jziebell@myhelo.com. You're welcome to host it online and send us a link, but that is not required.
 
 ## Other Resources
-https://open.fda.gov/apis/drug/label/
-https://open.fda.gov/apis/try-the-api/
+https://open.fda.gov/apis/drug/label/  
+https://open.fda.gov/apis/try-the-api/  
 https://open.fda.gov/apis/authentication/

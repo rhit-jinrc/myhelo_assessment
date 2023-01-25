@@ -6,7 +6,7 @@ var component = function() {};
  * @param {HTMLElement} parent
  */
 component.prototype.render = function(parent) {
-  var container = document.createElement('div');
+  const container = document.createElement('div');
   this.decorate(container);
   parent.appendChild(container);
 }

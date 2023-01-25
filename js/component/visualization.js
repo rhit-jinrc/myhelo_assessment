@@ -12,12 +12,12 @@ assessment.extend(component.visualization, component);
  * @param {HTMLDivElement} parent
  */
 component.visualization.prototype.decorate = function(parent) {
-  var self = this;
-  var container = document.createElement('div');
+  const self = this;
+  const container = document.createElement('div');
   parent.appendChild(container);
 
   // Show basic loading text until the API call to the FDA completes.
-  var loading = document.createElement('div');
+  const loading = document.createElement('div');
   loading.innerText = 'Loading...';
   container.appendChild(loading);
 

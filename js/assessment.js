@@ -13,12 +13,12 @@ var assessment = {};
  * the API call.
  */
 assessment.fda_api = function(url, callback) {
-  var callback_ = function() {
-    var json = JSON.parse(this.responseText);
+  const callback_ = function() {
+    const json = JSON.parse(this.responseText);
     callback(json.results);
   };
 
-  var request = new XMLHttpRequest();
+  const request = new XMLHttpRequest();
   request.addEventListener('load', callback_);
   request.open('GET', url);
   request.send();
@@ -28,10 +28,10 @@ assessment.fda_api = function(url, callback) {
  * Runs when the document is fully loaded and ready to go.
  */
 assessment.ready = function() {
-  var header = new component.header();
+  const header = new component.header();
   header.render(document.body);
 
-  var visualization = new component.visualization();
+  const visualization = new component.visualization();
   visualization.render(document.body);
 };
 

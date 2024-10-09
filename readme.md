@@ -2,17 +2,16 @@
 Welcome! For this exercise, you'll be working with an existing codebase to demonstrate your skills and creativity. This year, we're emphasizing the use of AI tools to help you achieve the best possible output in the shortest amount of time. We encourage you to use AI coding assistants like ChatGPT, Claude, Gemini, or others to assist you throughout this task. The goal is not just to complete the task but to see how effectively you can leverage AI to improve your process, learn new things, and enhance your final output.
 
 ## Instructions:
-1. Download the Project:
+**1. Download the Project:**
 - Clone this GitHub project to your local machine.
 - Open index.html in your browser to run the project.
 - The project runs entirely locally, and the JavaScript you write will process in your browser. Any API calls you make will also be handled directly through JavaScript in the browser.
 
-2. Edit the Code:
+**2. Edit the Code:**
 - Open visualization.js and examine the decorate_data() function.
 - Choose an API call from the provided examples or come up with your own. Update the decorate_data() function based on the API you chose. This could involve modifying or adding code in other parts of the project.
-- We encourage you to use AI tools to help guide your decisions, generate code, troubleshoot issues, and optimize your solutions. AI should be a significant part of your process, helping you be as productive and creative as possible.
 
-3. Leverage AI Tools:
+**3. Leverage AI Tools:**
 - We expect you to use AI to assist in building the best website you can. The AI can help you with:
   - Writing and refining code
   - Debugging and troubleshooting
@@ -20,7 +19,7 @@ Welcome! For this exercise, you'll be working with an existing codebase to demon
   - Learning new concepts (e.g., creating visual graphs, adding interactivity, or exploring APIs)
 - Feel free to use AI for creative solutions as well. The sky’s the limit!
 
-4. Be Creative:
+**4. Be Creative:**
 The code is yours to modify. We want to see your strengths and interests reflected in the final product. Here are a few directions you could take:
 - Polish the UI: Use CSS to create a beautiful, modern design.
 - Mobile-First: Ensure the site is fully responsive across devices.

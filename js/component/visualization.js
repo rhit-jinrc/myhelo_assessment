@@ -3,6 +3,9 @@
  */
 component.visualization = function() {
   component.apply(this, arguments);
+
+  this.openai_data = null;
+  this.fda_data = null;
 };
 assessment.extend(component.visualization, component);
 
@@ -20,6 +23,19 @@ component.visualization.prototype.decorate = function(parent) {
   const loading = document.createElement('div');
   loading.innerText = 'Loading...';
   container.appendChild(loading);
+
+  assessment.openai_api(
+    [
+      {
+        role: 'user',
+        content: 'What are the side effects of ibuprofen?'
+      }
+    ],
+    function(response) {
+      self.openai_data = response;
+      self.decorate_data(container);
+    }
+  );
 
   /**
    * Here are some other ideas:
@@ -49,7 +65,7 @@ component.visualization.prototype.decorate = function(parent) {
   assessment.fda_api(
     'https://api.fda.gov/drug/label.json?search=openfda.product_type.exact:"HUMAN PRESCRIPTION DRUG"&count=openfda.route.exact',
     function(data) {
-      self.data = data;
+      self.fda_data = data;
       self.decorate_data(container);
     }
   );
@@ -61,5 +77,8 @@ component.visualization.prototype.decorate = function(parent) {
  * @param {HTMLElement} parent
  */
 component.visualization.prototype.decorate_data = function(parent) {
-  parent.innerHTML = '<pre>' + JSON.stringify(this.data, null, '  ') + '</pre>';
+  parent.innerHTML = '<h2>OpenAI Data</h2>';
+  parent.innerHTML += '<pre>' + this.openai_data + '</pre>';
+  parent.innerHTML += '<h2>FDA Data</h2>';
+  parent.innerHTML += '<pre>' + JSON.stringify(this.fda_data, null, '  ') + '</pre>';
 };

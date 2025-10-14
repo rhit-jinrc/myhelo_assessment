@@ -1,6 +1,11 @@
 # myhELO Coding Assessment
 Welcome! For this exercise, you'll be working with an existing codebase to demonstrate your skills and creativity. This year, we're emphasizing the use of AI tools to help you achieve the best possible output in the shortest amount of time. We encourage you to use AI coding assistants like ChatGPT, Claude, Gemini, or others to assist you throughout this task. The goal is not just to complete the task but to see how effectively you can leverage AI to improve your process, learn new things, and enhance your final output.
 
+## What We’re Looking For
+This project is intentionally open-ended, there’s no single “right” answer or required feature set. The goal is to see how you approach an unfamiliar codebase, make decisions, and apply your creativity (especially with AI tools).
+
+You’re free to take the project in any direction that reflects your interests and strengths. We care most about your reasoning, the quality of your implementation, and how effectively you use AI to improve your process. Think of it as an opportunity to show us how you would shape this project if it were yours.
+
 ## Instructions:
 **1. Download the Project:**
 - Clone this GitHub project to your local machine.
@@ -20,12 +25,26 @@ Welcome! For this exercise, you'll be working with an existing codebase to demon
 - Feel free to use AI for creative solutions as well. The sky’s the limit!
 
 **4. Be Creative:**
+
 The code is yours to modify. We want to see your strengths and interests reflected in the final product. Here are a few directions you could take:
 - Polish the UI: Use CSS to create a beautiful, modern design.
 - Mobile-First: Ensure the site is fully responsive across devices.
 - Advanced API Analysis: Perform deeper analysis using data from multiple API calls.
 - Interactivity: Add interactive elements to make the application more dynamic.
 - Custom Features: Write your own basic chart library or even turn the project into a game or text-based adventure.
+- **AI Integration:** The codebase includes OpenAI API support. If you'd like to integrate AI capabilities, add the provided OpenAI API key in `assessment.js` (line 37) and explore creative ways to combine AI responses with FDA data. This could include natural language summaries, intelligent data interpretation, or conversational interfaces.
+
+**5. When You're Done:**
+
+There’s no strict endpoint, stop when you feel your project meaningfully demonstrates your skills and approach. Most people spend around 3–5 hours.
+
+We don’t expect a polished production app; we’re interested in your thought process, creativity, and use of AI. As long as your project:
+
+- Runs locally and fetches/processes some data
+- Shows clear evidence of thoughtful design or experimentation
+- Includes your brief AI usage report
+
+…you’ve met the spirit of the assignment.
 
 ## Running the Project Locally:
 Once you have downloaded the project:
@@ -47,6 +66,10 @@ At the end of the exercise, include a brief paragraph or two explaining:
 When you're done, simply zip up your project and email it to careers@myhelo.com.
 
 ## Other Resources
+**FDA API:**  
 https://open.fda.gov/apis/drug/label/  
 https://open.fda.gov/apis/try-the-api/  
 https://open.fda.gov/apis/authentication/
+
+**OpenAI API:**  
+https://platform.openai.com/docs/guides/completions

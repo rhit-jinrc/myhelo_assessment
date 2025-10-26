@@ -34,23 +34,20 @@ assessment.fda_api = function(url, callback) {
  * the API call.
  */
 assessment.openai_api = function(messages, callback) {
-  const OPENAI_API_KEY = '<PASTE OPENAI API KEY HERE>';
-
   const callback_ = function() {
     if (this.status !== 200) {
-      console.error('OpenAI Error: ' + this.responseText);
+      console.error('OpenAI Proxy Error: ' + this.responseText);
       return;
     }
-
     const json = JSON.parse(this.responseText);
+    // The proxy returns the full OpenAI response
     callback(json.choices[0].message.content);
   };
 
   const request = new XMLHttpRequest();
   request.addEventListener('load', callback_);
-  request.open('POST', 'https://api.openai.com/v1/chat/completions');
+  request.open('POST', 'http://localhost:3000/api/openai');
   request.setRequestHeader('Content-Type', 'application/json');
-  request.setRequestHeader('Authorization', 'Bearer ' + OPENAI_API_KEY);
   request.send(JSON.stringify({
     model: 'gpt-4o',
     messages: messages
